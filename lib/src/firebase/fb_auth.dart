@@ -59,7 +59,7 @@ class FBAuth extends FBBaseAuth {
     await _firebaseAuth.sendPasswordResetEmail(email: email);
   }
 
-  createUser(uid, user) {
+  void createUser(uid, user) {
     _usersColection.document().setData(user);
   }
 

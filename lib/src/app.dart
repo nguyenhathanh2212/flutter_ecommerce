@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'ui/auth/main_auth.dart';
 import 'firebase/fb_auth.dart';
-import 'ui/main_profile.dart';
+import 'ui/main_app.dart';
 import 'blocs/auth_bloc.dart';
+import 'blocs/service_bloc.dart';
+import 'blocs/item_bloc.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -53,6 +55,8 @@ class _AppPageState extends State<AppPage> {
   @override
   void dispose() {
     authBloc.dispose();
+    serviceBloc.dispose();
+    itemBloc.dispose();
     super.dispose();
   }
 

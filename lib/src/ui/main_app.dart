@@ -40,6 +40,7 @@ class _MainAppState extends State<MainApp> {
         }
       });
     });
+
     super.initState();
   }
 
